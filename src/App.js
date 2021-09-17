@@ -19,9 +19,15 @@ export default function App() {
             <>
                 <ul className={"navbar"}>
                     <li className={"model-deployer non-select"}><img className={"model-deployer-icon"} title={"Model Deployer"} src="https://img.icons8.com/external-kiranshastry-gradient-kiranshastry/60/000000/external-3d-cube-virtual-reality-kiranshastry-gradient-kiranshastry.png" alt={"Model Deployer"}/></li>
-                    <li className={"deployment"}><Link to="/"><img className={"deployment-icon"} src={python} alt={"python-logo"}/></Link></li>
-                    <li className={"deployment"}><Link to="/about"><img className={"deployment-icon"} src={spark} alt={"spark-logo"}/></Link></li>
-                    <li className={"model-deployer"}><Link to="/topics">Topics</Link></li>
+                    <li className={"deployment"}>
+                        <Link to="/"><img className={"deployment-icon"} src={python} alt={"python-logo"}/></Link>
+                    </li>
+                    <li className={"deployment"}>
+                        <Link to="/about"><img className={"deployment-icon"} src={spark} alt={"spark-logo"}/></Link>
+                    </li>
+                    <li className={"deployment"}>
+                        <Link to="/topics">Topics</Link>
+                    </li>
                 </ul>
 
                 <Switch>
@@ -44,6 +50,11 @@ function Home() {
     return (
         <div className={"home"}>
             <h2>Home</h2>
+            <div className={'equal-divs'}>
+                <button>Start Deployment</button>
+                <a>.zip</a>
+                <button>Commit</button>
+            </div>
         </div>
     )
 }
